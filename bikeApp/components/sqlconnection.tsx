@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import { View, Text, Button } from "react-native";
+import { StyleSheet, View, Text, Button, TouchableOpacity } from "react-native";
+import { styles } from "./styles";
 //Most of the error messages in this component comes from objects that are defined in the mySQL database
 
 const SQLconnection = () => {
@@ -63,18 +64,25 @@ const SQLconnection = () => {
       const visibleData = data.slice((page - 1) * 10, page * 10);
 
     return(
-        <View>
+        <View style={styles.container}>
             <Text>Display data from mySQL</Text>
             <Text>Total bike trips {totalRecords}</Text>
             <View> {visibleData.map(item =>(
-                <View key={item.id}>
+                <TouchableOpacity key={item.id} style={styles.itemContainer}>
                     <Text>{item.departure_time}</Text>
                     <Text>{item.departure_station_name}</Text> 
                     <Text>{item.return_time}</Text>
                     <Text>{item.return_station_name}</Text> 
-                </View> 
+                </TouchableOpacity> 
             ))}
             </View>
             <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
                 <Button onPress={()=>goToPreviousPage()} title="Previous Page" disabled={page === 1} />
-                <Button onPress={()=>goToNextPage()} title="Next Page" disabled={pa
+                <Button onPress={()=>goToNextPage()} title="Next Page" disabled={page === totalPages} />
+            </View>
+        </View>
+    )
+
+}
+
+export default SQLconnection;
