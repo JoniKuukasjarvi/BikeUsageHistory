@@ -7,6 +7,8 @@ export const styles = StyleSheet.create({
       backgroundColor: "#F8F8F8",
       paddingHorizontal: 16,
       paddingVertical: 24,
+      alignItems: 'center', 
+      justifyContent: 'center', 
     },
     itemContainer: {
         backgroundColor: "#E1F5FE",
@@ -14,6 +16,9 @@ export const styles = StyleSheet.create({
         marginBottom: 16,
         borderRadius: 8,
         cursor: "pointer",
+        flexDirection: 'row',
+        alignItems: 'center', 
+        justifyContent: 'center', 
         shadowColor: "#000",
         shadowOffset: {
           width: 0,
@@ -22,6 +27,18 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.25,
         shadowRadius: 4,
         elevation: 5,
+        minWidth: 450,
+        maxWidth: 700,
+      },
+      leftContent: {
+        flex: 1,
+      },
+      rightContent: {
+        flex: 1,
+        alignItems: 'flex-end',
+      },
+      text: {
+        marginBottom: 5,
       },
 
 
