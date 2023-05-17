@@ -11,7 +11,7 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Bike Trips">
+      <Stack.Navigator initialRouteName="Main Menu">
         <Stack.Screen name="Bike Trips" component={SQLconnection} />
         <Stack.Screen name="Details" component={DetailsScreen} />
         <Stack.Screen name="Main Menu" component={MainMenu} />

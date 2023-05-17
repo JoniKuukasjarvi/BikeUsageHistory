@@ -74,6 +74,53 @@ app.get("/biketrips", (req, res) => {
   });
 });
 
+app.get('/stations', (req, res) => {
+  const searchQuery = req.query.search || '';
+
+  let query = `
+    SELECT
+      bt.departure_station_name,
+      COUNT(*) AS total_records
+    FROM
+      biketrips AS bt
+    GROUP BY
+      bt.departure_station_name
+    ORDER BY
+      total_records DESC
+  `;
+
+  if (searchQuery) {
+    query = `
+      SELECT
+        bt.departure_station_name,
+        COUNT(*) AS total_records
+      FROM
+        biketrips AS bt
+      WHERE
+        bt.departure_station_name LIKE '%${searchQuery}%'
+      GROUP BY
+        bt.departure_station_name
+      ORDER BY
+        total_records DESC
+    `;
+  }
+
+  db.query(query, (err, result) => {
+    if (err) {
+      console.error('Error retrieving station names:', err);
+      return res.status(500).json({ message: 'Internal server error' });
+    }
+
+    const stations = result.map((row) => ({
+      name: row.departure_station_name,
+      total_records: row.total_records,
+    }));
+
+    return res.json(stations);
+  });
+});
+
+
 
 
 
