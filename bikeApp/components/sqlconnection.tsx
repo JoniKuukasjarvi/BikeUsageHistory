@@ -72,7 +72,6 @@ const SQLconnection = () => {
 
     return(
         <View style={styles.container}>
-            <Text>Display data from mySQL</Text>
             <Text>Total bike trips {totalRecords}</Text>
             
             <View> {visibleData.map(item =>(
