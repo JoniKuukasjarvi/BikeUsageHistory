@@ -27,7 +27,7 @@ and the frontend terminal allows you to choose the device you want to start the 
 
 ![image](https://github.com/JoniKuukasjarvi/BikeUsageHistory/assets/70267456/79fabc02-f56d-409e-ac6c-69207e16be48)
 
-I chose to open this application on web browser, and this it what it looks like
+This is what the application looks like on a web browser.
 
 ![image](https://github.com/JoniKuukasjarvi/BikeUsageHistory/assets/70267456/c4ad37d1-9698-4e39-ac93-56c20f223b6f)
 
