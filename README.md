@@ -2,7 +2,7 @@
 
 
 This application was created as a pre-assignment for Solita academy.
-This application uses mySQL database, which I was not able to host anywhere. Meaning that if you want to use this create your own database, please.
+This application uses mySQL database.
 
 installation guide:
 
@@ -43,7 +43,3 @@ And you can click on any of the objects to display more data about the selected 
 
 ![image](https://github.com/JoniKuukasjarvi/BikeUsageHistory/assets/70267456/b456984b-d9a1-4ad4-9b32-698574efc6c8)
 
-I had issues with the mobile version of this applcation, and it doesn't seem to be working.
-Also I had difficulties with utf-8 characters (such as ä and ö) making it so that this application doesn't display them properly.
-
-I had to spend quite a lot of time on this since there was quite a bit of data to handle. Needed to rebuild the databases and APIs quite often to prevent the database from exhausting itself. I also tried couple of cloud databases (including Google firebase, and MongoDB) and those had limitations with read, write and data handling meaning the best option for this bigger scale database was my own local SQL database.
