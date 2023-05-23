@@ -1,13 +1,20 @@
 # BikeUsageHistory
 
+Demonstrating the application on a video.
+https://youtu.be/ohm5R5sOuuQ
 
 This application was created as a pre-assignment for Solita academy.
-This application uses mySQL database.
+Application uses mySQL database.
 
 installation guide:
 
+
 you need node.js to start and run this application:
 https://nodejs.org/en
+
+MySQL database is also needed.
+https://dev.mysql.com/downloads/mysql/
+
 
 After downloading the repository it should look like this in your folder
 
@@ -42,4 +49,45 @@ The "search"-function is there to locate your bikestations
 And you can click on any of the objects to display more data about the selected bike trip
 
 ![image](https://github.com/JoniKuukasjarvi/BikeUsageHistory/assets/70267456/b456984b-d9a1-4ad4-9b32-698574efc6c8)
+
+Easiest way to create the database that was used on this application is to run this command:
+
+_ CREATE TABLE biketrips (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    departure_time DATETIME,
+    return_time DATETIME,
+    departure_station_id INT,
+    departure_station_name VARCHAR(255),
+    return_station_id INT,
+    return_station_name VARCHAR(255),
+    covered_distance FLOAT,
+    duration TIME
+); _
+
+And then you can use "Data import Wizard" to import the data into the database
+
+![image](https://github.com/JoniKuukasjarvi/BikeUsageHistory/assets/70267456/f1cc5aad-7131-4b27-a799-e78a9d6865cf)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
