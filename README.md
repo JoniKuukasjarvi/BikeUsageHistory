@@ -64,12 +64,19 @@ _ CREATE TABLE biketrips (
     duration TIME
 ); _
 
+The command used in the original version of this application looked like this, since there was another collection for test purposes.
+
+![image](https://github.com/JoniKuukasjarvi/BikeUsageHistory/assets/70267456/0164577e-62d6-4a3b-b4e4-bfd02acc73db)
+
 And then you can use "Data import Wizard" to import the data into the database
 
 ![image](https://github.com/JoniKuukasjarvi/BikeUsageHistory/assets/70267456/f1cc5aad-7131-4b27-a799-e78a9d6865cf)
 
+In the import settings make sure that your database value matches the original data that is in your CSV-file.
 
+![image](https://github.com/JoniKuukasjarvi/BikeUsageHistory/assets/70267456/733eb40a-a510-49a5-9a15-e27d3253e8bf)
 
+After that you can Click "Next" twice and you've succesfully created this database.
 
 
 
