@@ -66,7 +66,7 @@ _CREATE TABLE biketrips (
 
 The command used in the original version of this application looked like this, since there was another collection for test purposes.
 
-![image](https://github.com/JoniKuukasjarvi/BikeUsageHistory/assets/70267456/0164577e-62d6-4a3b-b4e4-bfd02acc73db)
+![image](https://github.com/JoniKuukasjarvi/BikeUsageHistory/assets/70267456/0f1cac84-f819-4b28-9992-6756e6cb74ce)
 
 And then you can use "Data import Wizard" to import the data into the database
 
