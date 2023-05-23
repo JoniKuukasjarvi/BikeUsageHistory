@@ -52,7 +52,7 @@ And you can click on any of the objects to display more data about the selected 
 
 Easiest way to create the database that was used on this application is to run this command:
 
-_ CREATE TABLE biketrips (
+_CREATE TABLE biketrips (
     id INT AUTO_INCREMENT PRIMARY KEY,
     departure_time DATETIME,
     return_time DATETIME,
@@ -62,7 +62,7 @@ _ CREATE TABLE biketrips (
     return_station_name VARCHAR(255),
     covered_distance FLOAT,
     duration TIME
-); _
+);_
 
 The command used in the original version of this application looked like this, since there was another collection for test purposes.
 
